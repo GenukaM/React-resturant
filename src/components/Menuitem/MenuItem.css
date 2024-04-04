@@ -1,0 +1,27 @@
+.app__menuItem-head{
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  width: 100%;
+  justify-content: space-between;
+  background-color: green;
+}
+.app__menuItem-title{
+  flex:1;
+  background-color: red;
+}
+.app__menuItem-price{
+
+  flex: 1;
+  text-align: right;
+  align-items: flex-end;
+}
+
+.app__menuItem-dash{
+  height: 1px;
+  width: 40px;
+  background-color: var(--color-golden);
+}
+.app__menuItem-sub{
+  width: 100%;
+}
