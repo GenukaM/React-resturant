@@ -1,5 +1,6 @@
 .app__menuItem{
   width: 100%;
+  margin-bottom: 2rem;
 }
 .app__menuItem-head{
   display: flex;
@@ -11,6 +12,7 @@
 }
 .app__menuItem-title{
   width: 100%;
+
 }
 .app__menuItem-dash{
   height: 1px;
@@ -23,6 +25,7 @@
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
+  margin-left: 1rem;
 }
 .app__menuItem-sub{
   width: 100%;
