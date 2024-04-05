@@ -6,7 +6,7 @@ import './SpecialMenu.css';
 
 const SpecialMenu = () => {
   return(
-    <div className='app__specialMenu flex__center section__padding'>
+    <div className='app__specialMenu flex__center section__paddin'>
       <div className='app__specialMenu-title'>
         <SubHeading title='Menu That Fits Your Palatte'/>
         <h1 className='headtext__cormorant'>Today's Special</h1>
@@ -14,7 +14,7 @@ const SpecialMenu = () => {
       <div className='app__specialMenu-menu'>
         <div className='app__specialMenu-menu-wine flex__center'>
           <p className='app__specialMenu-menu-title'>Wine & Beer</p>
-          <div className='app__specialMenu-menu-wine-items'>
+          <div className='app__specialMenu-menu-items'>
             {data.wines.map((data,index)=>(
               <MenuItem title={data.title} price={data.price} tags={data.tags}/>
             ))}
@@ -25,7 +25,7 @@ const SpecialMenu = () => {
           </div>
           <div className='app__specialMenu-menu-cocktails flex__center'>
             <p className='app__specialMenu-menu-title'>Cocktails</p>
-            <div className='app__specialMenu-menu-cocktails-items'>
+            <div className='app__specialMenu-menu-items'>
               {data.cocktails.map((data,index)=>(
                 <MenuItem title={data.title} price={data.price} tags={data.tags}/>
               ))}
