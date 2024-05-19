@@ -6,11 +6,27 @@ import './Intro.css';
 
 const Intro = () => {
 
+  const handleVideo = ()=>{
+    setPlayVideo((prevPlayVideo) => !prevPlayVideo)
+
+    if(playVideo){
+      videoRef.current.pause();
+    }else{
+      videoRef.current.play();
+    }
+
+  }
+
    const [playVideo , setPlayVideo] = useState(false);
    const videoRef = useRef();
   return(
     <div className='app__video'>
       <video src={meal} type="video/mp4" muted controls={false} loop ref={videoRef}  />
+      <div className='app__video-overlay flex__center'>
+        <div className='app__video-overlay_circle flex__center' onClick={handleVideo}>
+          {playVideo ? <BsPauseFill color='#DCCA87' fontSize={30}/>:<BsFillPlayFill color='#DCCA87' fontSize={30}/>}
+        </div>
+      </div>
     </div>
   );
 }
