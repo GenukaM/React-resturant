@@ -5,6 +5,8 @@ import {meal} from '../../constants'
 import './Intro.css';
 
 const Intro = () => {
+  const [playVideo , setPlayVideo] = useState(false);
+  const videoRef = useRef();
 
   const handleVideo = ()=>{
     setPlayVideo((prevPlayVideo) => !prevPlayVideo)
@@ -17,8 +19,6 @@ const Intro = () => {
 
   }
 
-   const [playVideo , setPlayVideo] = useState(false);
-   const videoRef = useRef();
   return(
     <div className='app__video'>
       <video src={meal} type="video/mp4" muted controls={false} loop ref={videoRef}  />
